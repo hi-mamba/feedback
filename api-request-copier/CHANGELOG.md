@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.2.0
+
+- New **Feedback** command (Copy Request menu and Command Palette): opens a prefilled bug report or feature request at [hi-mamba/feedback](https://github.com/hi-mamba/feedback).
+- A one-time prompt after 20 copies invites a Marketplace review. The counter stays in VS Code's local storage and is never sent.
+- Marketplace Q&A enabled.
+- License: from 2.2.0 the extension is distributed under a proprietary license — free to use, including for commercial projects. Earlier versions remain under MIT.
+
 ## 2.1.0
 
 - **Search Endpoint**: paste a URL (or type a path / keywords) to find the controller method that handles it. Enter opens the method; the copy button copies its request as cURL. Path variables, gateway prefixes and `GET /path` queries all match.

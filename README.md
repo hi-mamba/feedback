@@ -19,7 +19,13 @@ Bug reports, feature requests, licenses and release notes. **Source code is not 
 
 ## API Request Copier
 
-![Search Endpoint](api-request-copier/assets/shot5.png)
+**右键复制成 cURL / Right-click → copy as cURL**
+
+![Copy as cURL](api-request-copier/assets/demo-copy.gif)
+
+**粘贴网址找到接口 / Paste a URL → jump to the method**
+
+![Search Endpoint](api-request-copier/assets/demo-search.gif)
 
 ## 隐私 / Privacy
 
