@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.3.0
+
+- New **API Endpoints** view in the Explorer: every route in the workspace grouped by class. Filter by URL, path or keyword (same matching as Search Endpoint), click to open the method, copy a request from the inline button. Refreshes after Java files are saved, created or deleted.
+
 ## 2.2.0
 
 - New **Feedback** command (Copy Request menu and Command Palette): opens a prefilled bug report or feature request at [hi-mamba/feedback](https://github.com/hi-mamba/feedback).

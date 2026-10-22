@@ -27,6 +27,10 @@ Bug reports, feature requests, licenses and release notes. **Source code is not 
 
 ![Search Endpoint](api-request-copier/assets/demo-search.gif)
 
+**接口列表侧边栏 / Every endpoint in a sidebar**
+
+![API Endpoints](api-request-copier/assets/shot6.png)
+
 ## 隐私 / Privacy
 
 这些工具都在你的电脑上本地运行，不统计、不追踪。反馈只在你主动提交 issue 时才会发出。
