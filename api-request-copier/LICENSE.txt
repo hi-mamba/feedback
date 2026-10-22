@@ -1,0 +1,40 @@
+API Request Copier — Proprietary License
+Copyright (c) 2026 hi-mamba. All rights reserved.
+
+This software (the "Plugin"), including its source code, binaries, icons, and
+accompanying materials, is proprietary. It is licensed, not sold, to end users
+for use with JetBrains IDEs and Visual Studio Code subject to the terms below.
+This license applies to version 2.2.0 and later.
+
+1. Grant of license
+   You are granted a free, personal, non-exclusive, non-transferable license to
+   install and use the Plugin in unmodified form, including for work on
+   commercial projects.
+
+2. Restrictions
+   You may NOT, in whole or in part:
+   - copy, redistribute, sublicense, sell, rent, or lease the Plugin;
+   - modify the Plugin or create derivative works based on it;
+   - reverse engineer, decompile, or disassemble the Plugin, except to the
+     extent expressly permitted by applicable law;
+   - remove or alter any copyright, trademark, or other proprietary notices.
+
+3. Source code
+   The source code of the Plugin is not released and remains the exclusive
+   property of the author. No open-source rights are granted.
+
+4. Disclaimer of warranty
+   THE PLUGIN IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT.
+
+5. Limitation of liability
+   IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER
+   LIABILITY ARISING FROM, OUT OF, OR IN CONNECTION WITH THE PLUGIN OR THE USE
+   OF THE PLUGIN.
+
+Versions released before 2.2.0 were distributed under the MIT License; copies
+of those versions remain under the MIT License.
+
+By installing or using the Plugin version 2.2.0 or later, you agree to be bound
+by these terms.

@@ -1,0 +1,44 @@
+name: 功能建议 / Feature request
+description: 希望增加或改进的功能 / Something you would like added or improved
+title: "[Idea] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ⚠️ **这里的内容是公开的。请不要粘贴公司代码或内部信息。**
+        ⚠️ **Everything here is public. Do not paste company code or internal details.**
+  - type: dropdown
+    id: product
+    attributes:
+      label: 软件 / Product
+      options:
+        - API Request Copier
+        - AI Commit Writer
+        - Dev Toolbox
+        - Timestamp Converter
+        - OpsFlow Studio
+        - 其他 / Other
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: 软件版本（可选）/ Product version (optional)
+  - type: textarea
+    id: scenario
+    attributes:
+      label: 你想做什么？/ What are you trying to do?
+      description: 描述使用场景，而不只是功能名 · Describe the situation, not just the feature name
+    validations:
+      required: true
+  - type: textarea
+    id: today
+    attributes:
+      label: 现在是怎么做的？/ How do you do it today?
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 希望怎么做？/ What would you like instead?
+    validations:
+      required: true

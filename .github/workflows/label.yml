@@ -1,0 +1,34 @@
+# Adds a product label (for example "api-request-copier") from the issue form's
+# "Product" field, so each product's feedback can be filtered on its own.
+name: Label by product
+
+on:
+  issues:
+    types: [opened, edited]
+
+permissions:
+  issues: write
+
+jobs:
+  label:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/github-script@v7
+        with:
+          script: |
+            const products = {
+              'API Request Copier': 'api-request-copier',
+              'AI Commit Writer': 'ai-commit-writer',
+              'Dev Toolbox': 'dev-toolbox',
+              'Timestamp Converter': 'timestamp-converter',
+              'OpsFlow Studio': 'opsflow-studio',
+            };
+            const issue = context.payload.issue;
+            const text = `${issue.title}\n${issue.body ?? ''}`;
+            // The form renders the dropdown as "### 软件 / Product\n\n<value>".
+            const field = (issue.body ?? '').match(/### 软件 \/ Product\s+([^\n]+)/);
+            const chosen = field ? field[1].trim() : '';
+            const label = products[chosen] ?? Object.entries(products).find(([name]) => text.includes(name))?.[1];
+            if (!label) return;
+            await github.rest.issues.addLabels({ owner: context.repo.owner, repo: context.repo.repo, issue_number: issue.number, labels: [label] });

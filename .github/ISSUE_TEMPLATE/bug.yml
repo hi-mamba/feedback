@@ -1,0 +1,55 @@
+name: 问题反馈 / Bug report
+description: 软件出错或结果不对 / Something is broken or produces a wrong result
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ⚠️ **这里的内容是公开的。请不要粘贴公司代码、内网地址、令牌或密码。** 能复现问题的最小示例最好。
+        ⚠️ **Everything here is public. Do not paste company code, internal URLs, tokens or passwords.** A minimal example is best.
+  - type: dropdown
+    id: product
+    attributes:
+      label: 软件 / Product
+      options:
+        - API Request Copier
+        - AI Commit Writer
+        - Dev Toolbox
+        - Timestamp Converter
+        - OpsFlow Studio
+        - 其他 / Other
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: 软件版本 / Product version
+      placeholder: "2.2.0"
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: 运行环境 / Environment
+      description: IDE / 浏览器 / 系统版本 · IDE, browser or OS version
+      placeholder: "IntelliJ IDEA 2025.2 Community, Windows 11"
+  - type: textarea
+    id: steps
+    attributes:
+      label: 怎么复现 / Steps to reproduce
+      placeholder: |
+        1. 打开 … / Open …
+        2. 点击 … / Click …
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期望结果和实际结果 / Expected vs actual
+    validations:
+      required: true
+  - type: textarea
+    id: extra
+    attributes:
+      label: 截图或错误信息（可选）/ Screenshots or error text (optional)
